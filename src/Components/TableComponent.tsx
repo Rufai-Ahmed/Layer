@@ -85,6 +85,7 @@ const Circle = styled.div`
 
 const Border = styled.div`
   border: 1px solid #e74c3cff;
+  border-bottom: none;
   width: 300px;
   height: 150px;
   display: flex;

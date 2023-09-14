@@ -82,7 +82,7 @@ const Search = styled.div`
   display: none;
   @media screen and (max-width: 768px) {
     width: 10%;
-    height: 15vh;
+    height: 15%;
     color: #000000;
     font-size: 30px;
     display: flex;
@@ -90,6 +90,8 @@ const Search = styled.div`
   }
   @media screen and (max-width: 375px) {
     margin-right: 40px;
+  }
+  @media screen and (max-width: 425px) {
   }
 `;
 
@@ -99,7 +101,7 @@ const Menu = styled.div`
     color: black;
     font-size: 30px;
     width: 10%;
-    height: 15vh;
+    height: 15%;
     display: flex;
     align-items: center;
   }
@@ -151,6 +153,10 @@ const LogoWrap = styled.div`
   @media screen and (max-width: 375px) {
     width: 40%;
   }
+  @media screen and (max-width: 425px) {
+    width: 30%;
+    height: 10%;
+  }
 `;
 
 const Wrapper = styled.div`
@@ -178,5 +184,11 @@ const Container = styled.div<{ bg: string; bxs: string }>`
 
   @media screen and (max-width: 375px) {
     width: 100%;
+  }
+
+  @media screen and (max-width: 425px) {
+    width: 95vw;
+    height: 10%;
+    margin: 0;
   }
 `;

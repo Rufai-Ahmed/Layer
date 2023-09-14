@@ -60,6 +60,9 @@ const Img = styled.img`
   @media screen and (max-width: 375px) {
     width: 100%;
   }
+  @media screen and (max-width: 425px) {
+    width: 100%;
+  }
 `;
 
 const Table = styled.div`

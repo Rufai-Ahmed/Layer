@@ -79,4 +79,7 @@ const Container = styled.div<{ margin: string; right: string }>`
   @media screen and (max-width: 375px) {
     margin: 0;
   }
+  @media screen and (max-width: 425px) {
+    left: -30px;
+  }
 `;

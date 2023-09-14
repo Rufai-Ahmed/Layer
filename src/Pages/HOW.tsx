@@ -93,6 +93,7 @@ const Button = styled.button`
   font-size: 18px;
   background-color: #e74c3cff;
   padding: 12px 17px;
+  margin-top: 90px;
 
   &:hover {
     transition: all 350ms;
@@ -105,15 +106,14 @@ const Components = styled.div`
   height: 50%;
   padding: 20px 0px 50px 0;
   display: flex;
-  @media screen and (max-width: 375px) {
-    flex-wrap: wrap;
-  }
+  flex-wrap: wrap;
 `;
 
 const Benefits = styled.div`
   height: 100%;
   width: 100%;
   margin: 40px 0px;
+  flex-wrap: wrap;
   @media screen and (max-width: 768px) {
     padding: 0px 0px;
   }
@@ -121,7 +121,6 @@ const Benefits = styled.div`
     flex-wrap: wrap;
     flex-direction: column;
     width: 100%;
-    margin: 100px 0px;
   }
 `;
 
@@ -144,6 +143,10 @@ const Text = styled.div`
   text-align: left;
   font-weight: 500;
   color: #9b9b9bff;
+
+  @media screen and (max-width: 425px) {
+    width: 100vw;
+  }
 `;
 
 const Wrapper = styled.div`
@@ -154,8 +157,13 @@ const Wrapper = styled.div`
   align-items: center;
   @media screen and (max-width: 375px) {
     flex-wrap: wrap;
-    margin-buttom: 50px;
+    margin-bottom: 50px;
     width: 100%;
+  }
+
+  @media screen and (max-width: 425px) {
+    width: 100vw;
+    padding: 50px 0px;
   }
 `;
 

@@ -77,6 +77,10 @@ const Button = styled.button<{ bg: string; brd: string; clr: string }>`
     padding: 10px 20px;
     font-size: 16px;
   }
+  @media screen and (max-width: 425px) {
+    padding: 10px 20px;
+    font-size: 15px;
+  }
 `;
 
 const Holder = styled.div`
@@ -89,6 +93,9 @@ const Img = styled.img`
   @media screen and (max-width: 375px) {
     height: 230px;
     margin-left: 60px;
+  }
+  @media screen and (max-width: 425px) {
+    width: 100%;
   }
 `;
 

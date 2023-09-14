@@ -84,6 +84,12 @@ const Right = styled.div`
   @media screen and (max-width: 768px) {
     width: 90%;
   }
+  @media screen and (max-width: 425px) {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+  }
 `;
 
 const Left = styled.div`
@@ -96,6 +102,12 @@ const Left = styled.div`
   margin-top: 50px;
   @media screen and (max-width: 768px) {
     width: 90%;
+  }
+  @media screen and (max-width: 425px) {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
   }
 `;
 
