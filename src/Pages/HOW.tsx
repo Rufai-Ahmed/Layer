@@ -130,6 +130,7 @@ const Info = styled.div`
   display: flex;
   flex-direction: column;
   align-items: start;
+  width: 60%;
 
   @media screen and (max-width: 375px) {
     flex-wrap: wrap;
