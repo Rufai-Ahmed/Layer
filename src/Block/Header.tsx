@@ -187,7 +187,7 @@ const Container = styled.div<{ bg: string; bxs: string }>`
   }
 
   @media screen and (max-width: 425px) {
-    width: 95vw;
+    width: 91%;
     height: 10%;
     margin: 0;
   }
