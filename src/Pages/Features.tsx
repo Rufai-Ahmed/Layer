@@ -57,7 +57,7 @@ const Features = () => {
               LIcon={BsPaletteFill}
               LText="Different Colours"
               color="purple"
-              right=""
+              right="20"
               margin=""
             />
             <FeatureComponent
@@ -71,7 +71,7 @@ const Features = () => {
               LIcon={BiMicrophone}
               LText="24/7 SUPPORT"
               color="#fe9776ff"
-              right=""
+              right="20"
               margin=""
             />
           </Right>
