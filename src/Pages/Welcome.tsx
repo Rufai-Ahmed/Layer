@@ -61,17 +61,13 @@ export default Welcome;
 const CWrap = styled.div`
   width: 100%;
   height: 100%;
-  padding: 0px 0px;
   display: flex;
-
-  @media screen and (max-width: 768px) {
-    flex-wrap: wrap;
-  }
+  flex-wrap: wrap;
 `;
 
 const Img = styled.img`
-  @media screen and (max-width: 768px) {
-    width: 100%;
+  @media screen and (max-width: 500px) {
+    height: 300px;
   }
 `;
 
@@ -82,13 +78,7 @@ const Right = styled.div`
   display: flex;
   justify-content: center;
   @media screen and (max-width: 768px) {
-    width: 90%;
-  }
-  @media screen and (max-width: 425px) {
     width: 100%;
-
-    display: flex;
-    justify-content: center;
   }
 `;
 
@@ -101,18 +91,16 @@ const Left = styled.div`
   justify-content: center;
   margin-top: 50px;
   @media screen and (max-width: 768px) {
-    width: 90%;
-  }
-  @media screen and (max-width: 425px) {
     width: 100%;
-
-    display: flex;
-    justify-content: center;
+    padding-right: 80px;
+  }
+  @media screen and (max-width: 500px) {
+    width: 100%;
+    padding-right: 20px;
   }
 `;
 
 const Text = styled.div`
-  margin-top: 20px;
   text-align: center;
   font-weight: 500;
   color: #9b9b9bff;
@@ -120,7 +108,7 @@ const Text = styled.div`
 
 const Wrapper = styled.div`
   width: 100%;
-  height: 50px;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -135,7 +123,7 @@ const Ball = styled.div`
 
 const TopWrapper = styled.div`
   width: 100%;
-  height: 70px;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -152,13 +140,12 @@ const Line = styled.div<{ bcc: string }>`
 `;
 
 const W = styled.div`
-  height: 60px;
+  height: 100%;
   width: 100%;
   font-size: 36px;
   font-weight: 400;
   display: flex;
   justify-content: center;
-  //   align-items: center;
 
   span {
     color: #e74c3cff;
@@ -169,6 +156,6 @@ const W = styled.div`
 const Container = styled.div`
   height: 100%;
   width: 100%;
-  background-color: white;
-  padding: 30px 0px 0px 0px;
+  background-color: #fff;
+  // padding: 30px 0px 0px 0px;
 `;

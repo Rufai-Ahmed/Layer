@@ -28,6 +28,9 @@ const Header = () => {
             <LogoWrap>
               <Logo src={blogo} />
             </LogoWrap>
+            <Search>
+              <BiSearch />
+            </Search>
             <NavWrap>
               <Nav clr="black">HOME</Nav>
               <Nav clr="black">FEATURES</Nav>
@@ -40,9 +43,6 @@ const Header = () => {
                 <Icon />
               </Nav>
             </NavWrap>
-            <Search>
-              <BiSearch />
-            </Search>
           </Wrapper>
         </Container>
       ) : (
@@ -54,6 +54,9 @@ const Header = () => {
             <LogoWrap>
               <Logo src={logo} />
             </LogoWrap>
+            <Search>
+              <BiSearch />
+            </Search>
             <NavWrap>
               <Nav clr="white">HOME</Nav>
               <Nav clr="white">FEATURES</Nav>
@@ -66,9 +69,6 @@ const Header = () => {
                 <Icon />
               </Nav>
             </NavWrap>
-            <Search>
-              <BiSearch />
-            </Search>
           </Wrapper>
         </Container>
       )}
@@ -81,7 +81,6 @@ export default Header;
 const Search = styled.div`
   display: none;
   @media screen and (max-width: 768px) {
-    width: 10%;
     height: 15%;
     color: #000000;
     font-size: 30px;
@@ -89,7 +88,6 @@ const Search = styled.div`
     align-items: center;
   }
   @media screen and (max-width: 375px) {
-    margin-right: 40px;
   }
   @media screen and (max-width: 425px) {
   }
@@ -100,7 +98,6 @@ const Menu = styled.div`
   @media screen and (max-width: 768px) {
     color: black;
     font-size: 30px;
-    width: 10%;
     height: 15%;
     display: flex;
     align-items: center;
@@ -144,27 +141,21 @@ const Logo = styled.img`
 `;
 
 const LogoWrap = styled.div`
-  width: 10%;
-  height: 15vh;
   display: flex;
   align-items: center;
   justify-content: center;
-
-  @media screen and (max-width: 375px) {
-    width: 40%;
-  }
-  @media screen and (max-width: 425px) {
-    width: 30%;
-    height: 10%;
-  }
 `;
 
 const Wrapper = styled.div`
-  width: 90%;
-  height: 15vh;
+  width: 85%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media screen and (max-width: 768px) {
+    justify-content: space-between;
+    width: 100%;
+  }
 
   @media screen and (max-width: 375px) {
     width: 90%;
@@ -181,14 +172,4 @@ const Container = styled.div<{ bg: string; bxs: string }>`
   position: fixed;
   box-shadow: 0px 0px ${({ bxs }) => bxs}px #ebebebff;
   background-color: ${({ bg }) => bg};
-
-  @media screen and (max-width: 375px) {
-    width: 100%;
-  }
-
-  @media screen and (max-width: 425px) {
-    width: 91%;
-    height: 10%;
-    margin: 0;
-  }
 `;

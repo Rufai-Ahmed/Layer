@@ -14,36 +14,37 @@ const HOW = () => {
           </mark>
         </Phone>
         <Info>
-          <TopWrapper>
-            <W>
-              HOW IT <span> WORKS</span>
-            </W>
-            <div
-              style={{
-                display: "flex",
-                width: "100%",
-                justifyContent: "start",
-              }}
-            >
-              <Line bcc="#e74f40ff">
-                <Ball />
-              </Line>
-              <Line bcc="grey"></Line>
-            </div>
-          </TopWrapper>
-          <Wrapper>
-            <Text>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore aliqua. Lorem ipsum
-              dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore aliqua.Lorem ipsum dolor sit
-              amet, consectetur adipisicing elit.
-            </Text>
-          </Wrapper>
+          <Div>
+            <TopWrapper>
+              <W>HOW IT WORKS</W>
+              <div
+                style={{
+                  display: "flex",
+                  width: "100%",
+                  justifyContent: "start",
+                  margin: "0",
+                }}
+              >
+                <Line bcc="#e74f40ff">
+                  <Ball />
+                </Line>
+                <Line bcc="grey"></Line>
+              </div>
+            </TopWrapper>
+            <Wrapper>
+              <Text>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore aliqua. Lorem
+                ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore aliqua.Lorem ipsum
+                dolor sit amet, consectetur adipisicing elit.
+              </Text>
+            </Wrapper>
+          </Div>
           <Benefits>
-            <W style={{ fontSize: "30px" }}>Benefits Of App</W>
+            <B style={{ fontSize: "30px" }}>Benefits Of App</B>
             <Components>
-              <div>
+              <div style={{ margin: "0", display: "flex", flexWrap: "wrap" }}>
                 <HOWComponent
                   Licon={BiBell}
                   Ltext="Notifications"
@@ -59,7 +60,7 @@ const HOW = () => {
                   right="#fb6351ff"
                 />
               </div>
-              <div>
+              <div style={{ margin: "0", display: "flex", flexWrap: "wrap" }}>
                 <HOWComponent
                   Licon={BiStar}
                   Ltext="Favourites"
@@ -76,8 +77,8 @@ const HOW = () => {
                 />
               </div>
             </Components>
-            <Button>Learn More</Button>
           </Benefits>
+          <Button>Learn More</Button>
         </Info>
       </Container>
     </div>
@@ -86,6 +87,18 @@ const HOW = () => {
 
 export default HOW;
 
+const B = styled.h1`
+  margin: 10px;
+`;
+
+const Div = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+
+  flex-direction: column;
+`;
+
 const Button = styled.button`
   border: none;
   border-radius: 40px;
@@ -93,7 +106,7 @@ const Button = styled.button`
   font-size: 18px;
   background-color: #e74c3cff;
   padding: 12px 17px;
-  margin-top: 90px;
+  margin: 24px 0;
 
   &:hover {
     transition: all 350ms;
@@ -103,20 +116,17 @@ const Button = styled.button`
 `;
 
 const Components = styled.div`
-  height: 50%;
-  padding: 20px 0px 50px 0;
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 30px;
 `;
 
 const Benefits = styled.div`
   height: 100%;
   width: 100%;
-  margin: 40px 0px;
   flex-wrap: wrap;
-  @media screen and (max-width: 768px) {
-    padding: 0px 0px;
-  }
   @media screen and (max-width: 375px) {
     flex-wrap: wrap;
     flex-direction: column;
@@ -137,22 +147,23 @@ const Info = styled.div`
     flex-direction: column;
     width: 100%;
   }
+  @media screen and (max-width: 425px) {
+    width: 100%;
+  }
+  @media screen and (max-width: 768px) {
+    width: 95%;
+  }
 `;
 
 const Text = styled.div`
-  margin-top: 20px;
   text-align: left;
   font-weight: 500;
   color: #9b9b9bff;
-
-  @media screen and (max-width: 425px) {
-    width: 100vw;
-  }
 `;
 
 const Wrapper = styled.div`
   width: 100%;
-  height: 50px;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -161,10 +172,11 @@ const Wrapper = styled.div`
     margin-bottom: 50px;
     width: 100%;
   }
-
   @media screen and (max-width: 425px) {
-    width: 100vw;
-    padding: 50px 0px;
+    margin-left: 4px;
+  }
+  @media screen and (max-width: 768px) {
+    margin-top: 15px;
   }
 `;
 
@@ -177,34 +189,41 @@ const Ball = styled.div`
 
 const TopWrapper = styled.div`
   width: 100%;
-  height: 70px;
+  height: 100%;
   display: flex;
   justify-content: start;
   align-items: center;
   flex-direction: column;
+  @media screen and (max-width: 425px) {
+    margin-bottom: 15px;
+    margin-left: 3px;
+  }
 `;
 
 const Line = styled.div<{ bcc: string }>`
   width: 50px;
   height: 1px;
   background-color: ${({ bcc }) => bcc};
-  margin: 14px 0px 28px 0px;
   display: flex;
   align-items: center;
 `;
 
 const W = styled.div`
-  height: 60px;
+  height: 100%;
   width: 100%;
   font-size: 36px;
   font-weight: 400;
   display: flex;
   justify-content: start;
-  //   align-items: center;
+  align-items: center;
 
-  span {
-    color: #e74c3cff;
-    margin-left: 11px;
+  @media screen and (max-width: 425px) {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 30px;
+    margin-bottom: 15px;
   }
 `;
 
@@ -215,25 +234,19 @@ const Phone = styled.div`
   align-items: center;
   justify-content: end;
   @media screen and (max-width: 768px) {
-    justify-content: start;
     width: 100%;
-    margin: 0;
   }
 
-  @media screen and (max-width: 375px) {
-    width: 100%;
-    
-    
-}
-
-mark {
+  
+  mark {
+    height: 100%;
     width: 70%;
     display: flex;
     justify-content: end;
     background-image: url(${small});
     background-repeat: no-repeat;
     background-position-x: 0px;
-    margin-right: 30px;
+    // margin-right: 30px;
     background-color: transparent;
     background-position-y: 30px;
     @media screen and (max-width: 768px) {
@@ -246,19 +259,25 @@ mark {
         width: 100%;
         background-position-x: 150px;
         background-position-y: 60px;
-      background-size: 60%;
-  }
+        background-size: 60%;
+      }
+      @media screen and (max-width: 425px) {
+        height: 40%;
+        width: 100%
+      }
 `;
 
 const Container = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
-  padding: 70px 0px 0px 0px;
+  padding: 70px 0px 70px 0px;
 
   @media screen and (max-width: 768px) {
     height: 100%;
     flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
   }
   @media screen and (max-width: 375px) {
     flex-wrap: wrap;

@@ -82,8 +82,12 @@ const Icon = styled.div<{ right: string; left: string }>`
 
 const Container = styled.div`
   width: 100%;
-  height: 150px;
-  padding-right: 40px;
+  height: 100%;
   display: flex;
   align-items: start;
+  margin: 10px 0px;
+  @media screen and (max-width: 425px) {
+    width: 100%;
+    justify-content: center;
+  }
 `;

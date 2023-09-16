@@ -76,7 +76,7 @@ const Icon = styled.div<{ right: string; left: string }>`
 const Container = styled.div`
   width: 100%;
   height: 170px;
-  padding-right: 40px;
+  // padding-right: 40px;
   display: flex;
   align-items: center;
   flex-direction: row-reverse;

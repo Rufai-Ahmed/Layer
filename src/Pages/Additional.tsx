@@ -33,10 +33,10 @@ const Additional = () => {
             <TableComponent Icon={BsTv} text="RESPONSIVE" />
             <TableComponent Icon={BiRocket} text="UNLIMITED SUPPORT" />
           </Table>
+          <ImgHolder>
+            <Img src={phone} />
+          </ImgHolder>
         </Hold>
-        <ImgHolder>
-          <Img src={phone} />
-        </ImgHolder>
       </Container>
     </div>
   );
@@ -48,13 +48,6 @@ const ImgHolder = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
-  position: absolute;
-  bottom: -270px;
-  height: 400px;
-  @media screen and (max-width: 768px) {
-    margin-top: 200px;
-    bottom: -300px;
-  }
 `;
 const Img = styled.img`
   @media screen and (max-width: 375px) {
@@ -79,10 +72,11 @@ const Table = styled.div`
 `;
 
 const Hold = styled.div`
-  padding: 50px 0px 0px 0px;
+  padding: 50px 0px 00px 0px;
   width: 100%;
-  height: 83.2vh;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
+  flex-wrap: wrap;
 
   @media screen and (max-width: 768px) {
     padding: 50px 0px 80px 0px;
@@ -100,7 +94,7 @@ const Text = styled.div`
 
 const Wrapper = styled.div`
   width: 100%;
-  height: 50px;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -115,7 +109,7 @@ const Ball = styled.div`
 
 const TopWrapper = styled.div`
   width: 100%;
-  height: 70px;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -132,14 +126,17 @@ const Line = styled.div<{ bcc: string }>`
 `;
 
 const W = styled.div`
-  height: 60px;
+  height: 100%;
   width: 100%;
   font-size: 36px;
   font-weight: 400;
   display: flex;
   color: white;
   justify-content: center;
-  //   align-items: center;
+
+  @media screen and (max-width: 500px) {
+    font-size: 32px;
+  }
 
   span {
     color: #e74c3cff;
@@ -148,7 +145,7 @@ const W = styled.div`
 `;
 
 const Container = styled.div`
-  height: 90vh;
+  height: 100%;
   width: 100%;
   background-image: url(${bg});
   background-attachment: fixed;

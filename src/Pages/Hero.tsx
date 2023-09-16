@@ -90,11 +90,7 @@ const Holder = styled.div`
 `;
 
 const Img = styled.img`
-  @media screen and (max-width: 375px) {
-    height: 230px;
-    margin-left: 60px;
-  }
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 500px) {
     width: 100%;
   }
 `;
@@ -103,6 +99,9 @@ const Right = styled.div`
   width: 55%;
   display: flex;
   justify-content: center;
+  @media screen and (max-width: 500px) {
+    justify-content: center;
+  }
 `;
 
 const Left = styled.div`
@@ -128,9 +127,9 @@ const Left = styled.div`
   @media screen and (max-width: 768px) {
     width: 90%;
   }
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 500px) {
     width: 100%;
-    margin-left: 40px;
+    align-items: center;
   }
 `;
 
