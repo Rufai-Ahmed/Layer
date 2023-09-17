@@ -36,13 +36,16 @@ const Demovid = () => {
 };
 
 export default Demovid;
-const Img = styled.img``;
+const Img = styled.img`
+  width: 70%;
+`;
 
 const Laptop = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
 `;
 
 const Text = styled.div`
@@ -112,4 +115,5 @@ const Container = styled.div`
   background-attachment: fixed;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding: 40px 0 0 0;
+  margin-bottom: 50px;
 `;

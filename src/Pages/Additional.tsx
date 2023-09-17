@@ -50,11 +50,8 @@ const ImgHolder = styled.div`
   justify-content: center;
 `;
 const Img = styled.img`
-  @media screen and (max-width: 375px) {
-    width: 100%;
-  }
-  @media screen and (max-width: 425px) {
-    width: 100%;
+  @media (max-width: 885px) {
+    width: 90%;
   }
 `;
 
@@ -135,7 +132,7 @@ const W = styled.div`
   justify-content: center;
 
   @media screen and (max-width: 500px) {
-    font-size: 32px;
+    font-size: 29px;
   }
 
   span {
