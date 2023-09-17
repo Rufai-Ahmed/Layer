@@ -119,7 +119,7 @@ const Holder = styled.div`
   justify-content: center;
   align-items: center;
 
-  @media screen and (max-width: 885px) {
+  @media screen and (max-width: 1200px) {
     flex-wrap: wrap;
   }
 `;

@@ -100,7 +100,7 @@ const Right = styled.div`
   display: flex;
   justify-content: center;
 
-  @media (max-width: 885px) {
+  @media (max-width: 1200px) {
     width: 100%;
   }
   @media screen and (max-width: 500px) {
@@ -129,12 +129,12 @@ const Left = styled.div`
     }
   }
 
-  @media screen and (max-width: 885px) {
-    width: 100%;
+  @media screen and (max-width: 1200px) {
+    width: 70%;
   }
   @media screen and (max-width: 500px) {
-    width: 100%;
     align-items: center;
+    width: 90%;
   }
 `;
 
@@ -146,9 +146,8 @@ const Wrapper = styled.div`
   margin-top: 90px;
   justify-content: center;
   align-items: center;
-
+  flex-wrap: wrap;
   @media screen and (max-width: 885px) {
-    flex-wrap: wrap;
     gap: 50px;
   }
 `;

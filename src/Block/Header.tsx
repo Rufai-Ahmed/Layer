@@ -80,7 +80,7 @@ export default Header;
 
 const Search = styled.div`
   display: none;
-  @media screen and (max-width: 885px) {
+  @media screen and (max-width: 1200px) {
     height: 15%;
     color: #000000;
     font-size: 30px;
@@ -91,7 +91,7 @@ const Search = styled.div`
 
 const Menu = styled.div`
   display: none;
-  @media screen and (max-width: 885px) {
+  @media screen and (max-width: 1200px) {
     color: black;
     font-size: 30px;
     height: 15%;
@@ -124,7 +124,7 @@ const NavWrap = styled.div`
   justify-content: space-between;
   align-items: center;
 
-  @media screen and (max-width: 885px) {
+  @media screen and (max-width: 1200px) {
     display: none;
   }
 `;
@@ -148,9 +148,9 @@ const Wrapper = styled.div`
   justify-content: space-between;
   align-items: center;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1200px) {
     justify-content: space-between;
-    width: 100%;
+    width: 90%;
   }
 
   @media screen and (max-width: 375px) {

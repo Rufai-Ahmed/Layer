@@ -81,7 +81,7 @@ const Right = styled.div`
   margin-top: 30px;
   display: flex;
   justify-content: center;
-  @media screen and (max-width: 885px) {
+  @media screen and (max-width: 1200px) {
     width: 100%;
   }
 `;
@@ -94,7 +94,7 @@ const Left = styled.div`
   flex-direction: column;
   justify-content: center;
   margin-top: 50px;
-  @media screen and (max-width: 885px) {
+  @media screen and (max-width: 1200px) {
     width: 100%;
     padding-right: 80px;
   }
