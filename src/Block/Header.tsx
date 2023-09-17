@@ -119,7 +119,7 @@ const Nav = styled.div<{ clr?: string }>`
 
 const NavWrap = styled.div`
   width: 60%;
-  height: 15vh;
+  height: 12vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
