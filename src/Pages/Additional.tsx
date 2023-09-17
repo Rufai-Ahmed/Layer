@@ -66,7 +66,7 @@ const Table = styled.div`
   justify-content: center;
   padding: 30px 0px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 885px) {
     flex-wrap: wrap;
   }
 `;
@@ -78,7 +78,7 @@ const Hold = styled.div`
   background-color: rgba(0, 0, 0, 0.4);
   flex-wrap: wrap;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 885px) {
     padding: 50px 0px 80px 0px;
     height: 100%;
     flex-wrap: wrap;
@@ -151,7 +151,7 @@ const Container = styled.div`
   background-attachment: fixed;
   position: relative;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 885px) {
     height: 100%;
     flex-wrap: wrap;
   }

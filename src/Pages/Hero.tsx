@@ -52,8 +52,8 @@ const Dark = styled.div`
     width: 100%;
   }
 
-  @media screen and (max-width: 375px) {
-    padding-right: 0%;
+  @media screen and (max-width: 500px) {
+    width: 100%;
     justify-content: center;
   }
 `;
@@ -99,8 +99,13 @@ const Right = styled.div`
   width: 55%;
   display: flex;
   justify-content: center;
+
+  @media (max-width: 885px) {
+    width: 100%;
+  }
   @media screen and (max-width: 500px) {
     justify-content: center;
+    width: 100%;
   }
 `;
 
@@ -124,8 +129,8 @@ const Left = styled.div`
     }
   }
 
-  @media screen and (max-width: 768px) {
-    width: 90%;
+  @media screen and (max-width: 885px) {
+    width: 100%;
   }
   @media screen and (max-width: 500px) {
     width: 100%;
@@ -142,7 +147,7 @@ const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 885px) {
     flex-wrap: wrap;
     gap: 50px;
   }
@@ -154,14 +159,9 @@ const Container = styled.div`
   background-image: url(${bg});
   background-size: cover;
   background-attachment: fixed;
-  @media screen and (max-width: 768px) {
+  margin-bottom: 50px;
+  @media screen and (max-width: 885px) {
     width: 100%;
     flex-wrap: wrap;
-  }
-  @media screen and (max-width: 375px) {
-    width: 100%;
-  }
-  @media screen and (min-width: 768px) {
-    width: 100%;
   }
 `;

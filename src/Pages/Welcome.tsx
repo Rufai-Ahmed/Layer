@@ -8,10 +8,14 @@ const Welcome = () => {
     <div>
       <Container>
         <TopWrapper>
-          <W>
-            WELCOME TO <span> LAYER</span>
-          </W>
-          <div style={{ display: "flex" }}>
+          <W>WELCOME TO LAYER</W>
+          <div
+            style={{
+              display: "flex",
+              height: "100%",
+              alignItems: "center",
+            }}
+          >
             <Line bcc="#e74f40ff">
               <Ball />
             </Line>
@@ -77,7 +81,7 @@ const Right = styled.div`
   margin-top: 30px;
   display: flex;
   justify-content: center;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 885px) {
     width: 100%;
   }
 `;
@@ -90,7 +94,7 @@ const Left = styled.div`
   flex-direction: column;
   justify-content: center;
   margin-top: 50px;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 885px) {
     width: 100%;
     padding-right: 80px;
   }
@@ -134,22 +138,23 @@ const Line = styled.div<{ bcc: string }>`
   width: 50px;
   height: 1px;
   background-color: ${({ bcc }) => bcc};
-  margin-top: 23px;
   display: flex;
   align-items: center;
+  margin: 15px 0px;
 `;
 
 const W = styled.div`
   height: 100%;
   width: 100%;
-  font-size: 36px;
+  font-size: 34px;
   font-weight: 400;
   display: flex;
   justify-content: center;
+  text-align: center;
+  white-space: wrap;
 
   span {
     color: #e74c3cff;
-    margin-left: 11px;
   }
 `;
 

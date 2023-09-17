@@ -5,7 +5,7 @@ interface IFeature {
   LIcon: any;
   LText: string;
   color: string;
-  margin: string;
+  left: string;
   right: string;
 }
 
@@ -13,12 +13,12 @@ const FeatureComponent: React.FC<IFeature> = ({
   LIcon,
   LText,
   color,
-  margin,
+  left,
   right,
 }) => {
   return (
     <div>
-      <Container margin={margin} right={right}>
+      <Container left={left} right={right}>
         <Icon color={color}>
           <LIcon />
         </Icon>
@@ -41,28 +41,26 @@ const Stxt = styled.div`
 const Ltxt = styled.div`
   width: 100%;
   font-size: 24px;
-  margin-buttom: 14px;
+  margin-bottom: 14px;
 `;
 
 const Icon = styled.div<{ color: string }>`
   height: 100%;
   width: 15%;
+  margin-left: 20px;
   font-size: 27px;
   display: flex;
   align-items: center;
   color: ${({ color }) => color};
 `;
 
-const Container = styled.div<{ margin: string; right: string }>`
+const Container = styled.div<{ right: string; left: string }>`
   width: 290px;
   height: 130px;
   border-radius: 20px;
   box-shadow: 0px 0px 30px #e3e3f3ff;
-  padding: 0px 20px;
-  left: ${({ margin }) => margin}px;
+  margin: 0px ${({ right }) => right}px 0px ${({ left }) => left}px;
   display: flex;
-  position: absolute;
-  right: ${({ right }) => right}px;
   section {
     display: flex;
     justify-content: center;
@@ -70,16 +68,7 @@ const Container = styled.div<{ margin: string; right: string }>`
     flex-direction: column;
   }
 
-  @media screen and (max-width: 768px) {
-    width: 80%;
-    left: 0;
-    right: 0;
-    margin-left: 60px;
-  }
-  @media screen and (max-width: 375px) {
+  @media (max-width: 885px) {
     margin: 0;
-  }
-  @media screen and (max-width: 425px) {
-    left: -30px;
   }
 `;

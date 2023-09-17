@@ -1,5 +1,7 @@
 import PricingComponent from "../Components/PricingComponent";
+import Achievements from "./Achievements";
 import Additional from "./Additional";
+import Demovid from "./DemoVid";
 import Features from "./Features";
 import HOW from "./HOW";
 import Hero from "./Hero";
@@ -18,6 +20,8 @@ const HomeScreen = () => {
       <Additional />
       <Pricing />
       <ScreenShots />
+      <Achievements />
+      <Demovid />
     </div>
   );
 };

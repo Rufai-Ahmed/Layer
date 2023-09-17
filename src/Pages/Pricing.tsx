@@ -7,7 +7,7 @@ const Pricing = () => {
       <Container>
         <Wrapper>
           <Top>
-            <h2>APP SCREENSHOTS</h2>
+            <h2>PRICING</h2>
             <p>
               We ensure quality & support. People love us & we love them. Lorem{" "}
               <br />
@@ -43,16 +43,16 @@ const PriceWrap = styled.div`
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 20px;
 `;
 
 const Top = styled.div`
   width: 100%;
-  height: 40vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin: 50px 0px;
 
   h2 {
     font-size: 30px;
@@ -61,6 +61,7 @@ const Top = styled.div`
 
   p {
     text-align: center;
+    margin-bottom: 0;
   }
 `;
 
@@ -78,4 +79,5 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-bottom: 40px;
 `;

@@ -80,22 +80,18 @@ export default Header;
 
 const Search = styled.div`
   display: none;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 885px) {
     height: 15%;
     color: #000000;
     font-size: 30px;
     display: flex;
     align-items: center;
   }
-  @media screen and (max-width: 375px) {
-  }
-  @media screen and (max-width: 425px) {
-  }
 `;
 
 const Menu = styled.div`
   display: none;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 885px) {
     color: black;
     font-size: 30px;
     height: 15%;
@@ -128,7 +124,7 @@ const NavWrap = styled.div`
   justify-content: space-between;
   align-items: center;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 885px) {
     display: none;
   }
 `;
