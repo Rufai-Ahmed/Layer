@@ -45,7 +45,11 @@ const Wrapper = styled.div`
   }
 `;
 
-const Img = styled.img``;
+const Img = styled.img`
+  @media (max-width: 885px) {
+    width: 100%;
+  }
+`;
 
 const ImgWrapper = styled.div`
   width: 40%;
@@ -92,6 +96,9 @@ const TextWrapper = styled.div`
   justify-content: center;
   @media (max-width: 885px) {
     width: 80%;
+  }
+  @media (max-width: 320px) {
+    width: 90%;
   }
 `;
 

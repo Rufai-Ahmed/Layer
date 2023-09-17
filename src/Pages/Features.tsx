@@ -81,7 +81,11 @@ const Features = () => {
 
 export default Features;
 
-const Img = styled.img``;
+const Img = styled.img`
+  @media (max-width: 321px) {
+    width: 98%;
+  }
+`;
 
 const Right = styled.div`
   height: 100%;

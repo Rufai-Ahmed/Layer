@@ -39,6 +39,9 @@ const Small = styled.div`
   text-align: left;
   width: 250px;
   color: #a9a9a9ff;
+  @media (max-width: 360px) {
+    width: 210px;
+  }
 `;
 
 const Large = styled.div`
